@@ -1,0 +1,12 @@
+{
+    "collectionName": "components_productivity_calendlies",
+    "info": {
+        "displayName": "calendly"
+    },
+    "options": {},
+    "attributes": {
+        "value": {
+            "type": "string"
+        }
+    }
+}

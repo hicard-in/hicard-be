@@ -1,0 +1,27 @@
+{
+    "collectionName": "components_payment_payments",
+    "info": {
+        "displayName": "payment"
+    },
+    "options": {},
+    "attributes": {
+        "paypal": {
+            "displayName": "paypal",
+            "type": "component",
+            "repeatable": true,
+            "component": "payment.paypal"
+        },
+        "gpay": {
+            "displayName": "gpay",
+            "type": "component",
+            "repeatable": true,
+            "component": "payment.gpay"
+        },
+        "upi": {
+            "displayName": "upi",
+            "type": "component",
+            "repeatable": true,
+            "component": "payment.upi"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "collectionName": "components_payment_upis",
+    "info": {
+        "displayName": "upi"
+    },
+    "options": {},
+    "attributes": {
+        "value": {
+            "type": "string"
+        }
+    }
+}

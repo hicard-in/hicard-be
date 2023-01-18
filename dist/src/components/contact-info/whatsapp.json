@@ -1,0 +1,12 @@
+{
+    "collectionName": "components_contact_info_whatsapps",
+    "info": {
+        "displayName": "whatsapp"
+    },
+    "options": {},
+    "attributes": {
+        "value": {
+            "type": "string"
+        }
+    }
+}

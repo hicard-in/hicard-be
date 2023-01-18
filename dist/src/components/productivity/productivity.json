@@ -1,0 +1,27 @@
+{
+    "collectionName": "components_productivity_productivities",
+    "info": {
+        "displayName": "productivity"
+    },
+    "options": {},
+    "attributes": {
+        "calendly": {
+            "displayName": "calendly",
+            "type": "component",
+            "repeatable": true,
+            "component": "productivity.calendly"
+        },
+        "notion": {
+            "displayName": "notion",
+            "type": "component",
+            "repeatable": true,
+            "component": "productivity.notion"
+        },
+        "gdrive": {
+            "displayName": "gdrive",
+            "type": "component",
+            "repeatable": true,
+            "component": "productivity.gdrive"
+        }
+    }
+}

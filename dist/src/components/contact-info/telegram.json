@@ -1,0 +1,12 @@
+{
+    "collectionName": "components_contact_info_telegrams",
+    "info": {
+        "displayName": "telegram"
+    },
+    "options": {},
+    "attributes": {
+        "value": {
+            "type": "string"
+        }
+    }
+}

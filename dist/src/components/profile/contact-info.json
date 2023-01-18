@@ -1,0 +1,16 @@
+{
+    "collectionName": "components_profile_contact_infos",
+    "info": {
+        "displayName": "contact_info",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "website": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "collectionName": "components_contact_info_discords",
+    "info": {
+        "displayName": "discord"
+    },
+    "options": {},
+    "attributes": {
+        "value": {
+            "type": "string"
+        }
+    }
+}

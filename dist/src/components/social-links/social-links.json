@@ -1,0 +1,46 @@
+{
+    "collectionName": "components_social_links_social_links",
+    "info": {
+        "displayName": "social_links",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "linkedIn": {
+            "displayName": "linkedIn",
+            "type": "component",
+            "repeatable": true,
+            "component": "social-links.linked-in"
+        },
+        "instagram": {
+            "displayName": "instagram",
+            "type": "component",
+            "repeatable": true,
+            "component": "social-links.instagram"
+        },
+        "twitter": {
+            "displayName": "twitter",
+            "type": "component",
+            "repeatable": true,
+            "component": "social-links.twitter"
+        },
+        "facebook": {
+            "displayName": "facebook",
+            "type": "component",
+            "repeatable": true,
+            "component": "social-links.facebook"
+        },
+        "youtube": {
+            "displayName": "youtube",
+            "type": "component",
+            "repeatable": true,
+            "component": "social-links.youtube"
+        },
+        "snapchat": {
+            "displayName": "snapchat",
+            "type": "component",
+            "repeatable": true,
+            "component": "social-links.snapchat"
+        }
+    }
+}

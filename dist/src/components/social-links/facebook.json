@@ -1,0 +1,12 @@
+{
+    "collectionName": "components_social_links_facebooks",
+    "info": {
+        "displayName": "facebook"
+    },
+    "options": {},
+    "attributes": {
+        "value": {
+            "type": "string"
+        }
+    }
+}

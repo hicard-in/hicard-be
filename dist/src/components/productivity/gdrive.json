@@ -1,0 +1,12 @@
+{
+    "collectionName": "components_productivity_gdrives",
+    "info": {
+        "displayName": "gdrive"
+    },
+    "options": {},
+    "attributes": {
+        "value": {
+            "type": "string"
+        }
+    }
+}

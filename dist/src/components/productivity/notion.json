@@ -1,0 +1,12 @@
+{
+    "collectionName": "components_productivity_notions",
+    "info": {
+        "displayName": "notion"
+    },
+    "options": {},
+    "attributes": {
+        "value": {
+            "type": "string"
+        }
+    }
+}
