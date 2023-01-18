@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_contact_info_contact_infos",
+  "info": {
+    "displayName": "contact_info",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "website": {
+      "displayName": "website",
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-info.website"
+    },
+    "email": {
+      "displayName": "email",
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-info.email"
+    },
+    "phone": {
+      "displayName": "phone",
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-info.phone"
+    },
+    "whatsapp": {
+      "displayName": "whatsapp",
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-info.whatsapp"
+    },
+    "discord": {
+      "displayName": "discord",
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-info.discord"
+    },
+    "telegram": {
+      "displayName": "telegram",
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-info.telegram"
+    }
+  }
+}

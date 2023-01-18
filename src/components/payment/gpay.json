@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_payment_gpays",
+  "info": {
+    "displayName": "gpay"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    }
+  }
+}

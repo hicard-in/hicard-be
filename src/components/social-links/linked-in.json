@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_social_links_linked_ins",
+  "info": {
+    "displayName": "linkedIn"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    }
+  }
+}

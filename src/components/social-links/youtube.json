@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_social_links_youtubes",
+  "info": {
+    "displayName": "youtube"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    }
+  }
+}

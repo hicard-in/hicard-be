@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_social_links_snapchats",
+  "info": {
+    "displayName": "snapchat"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    }
+  }
+}

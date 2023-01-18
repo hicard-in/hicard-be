@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_contact_info_websites",
+  "info": {
+    "displayName": "website",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    }
+  }
+}
