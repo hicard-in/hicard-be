@@ -1,5 +1,17 @@
-export default [
+
+module.exports = ({ env }) => [
   'strapi::errors',
+  {
+    name: 'strapi::security',
+    config: {
+      contentSecurityPolicy: {
+        directives: {
+          'script-src': ["'self'", "'unsafe-inline'", 'cdn.jsdelivr.net'],
+          'img-src': ["'self'", 'data:', 'cdn.jsdelivr.net', 'strapi.io', `${env('AWS_BUCKET')}.s3.${env('AWS_REGION')}.amazonaws.com`],
+        },
+      }
+    },
+  },
   'strapi::security',
   'strapi::cors',
   'strapi::poweredBy',
@@ -10,3 +22,16 @@ export default [
   'strapi::favicon',
   'strapi::public',
 ];
+
+// export default [
+//   'strapi::errors',
+//   'strapi::security',
+//   'strapi::cors',
+//   'strapi::poweredBy',
+//   'strapi::logger',
+//   'strapi::query',
+//   'strapi::body',
+//   'strapi::session',
+//   'strapi::favicon',
+//   'strapi::public',
+// ];
