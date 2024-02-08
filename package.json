@@ -17,7 +17,8 @@
     "@strapi/strapi": "4.5.6",
     "mysql": "2.18.1",
     "sharp": "^0.31.3",
-    "strapi-plugin-populate-deep": "^1.1.2"
+    "strapi-plugin-populate-deep": "^1.1.2",
+    "strapi-provider-cloudflare-r2": "^0.2.5"
   },
   "author": {
     "name": "A Strapi developer"
