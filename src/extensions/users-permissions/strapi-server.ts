@@ -8,6 +8,9 @@ module.exports = (plugin)=>{
     await strapi.entityService.update('plugin::users-permissions.user', ctx.state.user.id, {
       data: ctx.request.body
     }).then((res)=>{
+
+      res.password = null;
+      res.resetPasswordToken = null;
       ctx.response.status = 200;
       ctx.response.body = res
     })
@@ -15,13 +18,10 @@ module.exports = (plugin)=>{
 
   plugin.controllers.user.getByUserName = async (ctx) =>{
 
-    console.log("GETTINGUPTOHERE\n\n\n\n", ctx.request.url);
-    console.log(getUsername(ctx.request.url));
     let username = getUsername(ctx.request.url);
     const entry = await strapi.db.query('plugin::users-permissions.user').findOne({
       where: { username }
     })
-    console.log("TETTING ENTRY", entry);
     // await strapi.entityService.get('plugin::users-permissions.user', ctx.state.user.id, {
     //   data: ctx.request.body
     // }).then((res)=>{
