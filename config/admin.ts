@@ -4,5 +4,6 @@ export default ({ env }) => ({
   },
   apiToken: {
     salt: env('API_TOKEN_SALT'),
-  }
+  },
+  url: env('STRAPI_ADMIN_URL', '/admin')
 });
