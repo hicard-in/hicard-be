@@ -3,7 +3,5 @@ export default ({ env }) => ({
   port: env.int('PORT', 1337),
   app: {
     keys: env.array('APP_KEYS'),
-  },
-  proxy: true,
-  url: env('STRAPI_URL', ''),
+  }
 });
