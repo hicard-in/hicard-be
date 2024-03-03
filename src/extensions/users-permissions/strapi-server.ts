@@ -12,9 +12,11 @@ const client = new S3Client({
 
 })
 module.exports = (plugin)=>{
-
+  console.log("CP1", plugin)
   plugin.controllers.user.updateMe = async (ctx) =>{
+    console.log("CP2", ctx)
     if(!ctx.state.user || !ctx.state.user.id){
+      console.log("INSIDE IF", ctx)
       return ctx.response.status = 401;
     }
     await strapi.entityService.update('plugin::users-permissions.user', ctx.state.user.id, {
