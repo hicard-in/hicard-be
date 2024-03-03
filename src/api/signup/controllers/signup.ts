@@ -33,14 +33,14 @@ module.exports = {
       "userId": userId
     }
     
-    let url = "http://localhost:1337/api/users"
+    let url = `http://${process.env.HOST}:${process.env.PORT}/api/users`
     let res:any;
 
     try {
       res = await axios.post(url, reqBody)
 
       const username = userId;
-      let data = await axios.get(`http://localhost:1337/api/users/?filters[$or][0][username][$eq]=${username}&filters[$or][1][userId][$eq]=${username}&populate=deep`)
+      let data = await axios.get(`http://${process.env.HOST}:${process.env.PORT}/api/users/?filters[$or][0][username][$eq]=${username}&filters[$or][1][userId][$eq]=${username}&populate=deep`)
       data = data.data
       
       const usernameInput = {
