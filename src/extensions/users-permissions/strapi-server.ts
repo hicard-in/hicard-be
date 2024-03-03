@@ -21,7 +21,7 @@ module.exports = (plugin)=>{
     }).then(async (res)=>{
 
       const username = res.username;
-      let data = await axios.get(`http://${host}:${port}/api/users/?filters[$or][0][username][$eq]=${username}&filters[$or][1][userId][$eq]=${username}&populate=deep`)
+      let data = await axios.get(`http://${process.env.HOST}:${process.env.PORT}/api/users/?filters[$or][0][username][$eq]=${username}&filters[$or][1][userId][$eq]=${username}&populate=deep`)
       data = data.data
       
       const usernameInput = {
