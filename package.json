@@ -20,6 +20,7 @@
     "mysql": "2.18.1",
     "pg": "^8.11.3",
     "sharp": "^0.31.3",
+    "strapi-google-auth": "^0.2.1",
     "strapi-plugin-populate-deep": "3.0.1",
     "strapi-provider-cloudflare-r2": "^0.2.5"
   },
