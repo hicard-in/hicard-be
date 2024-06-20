@@ -4,5 +4,6 @@ export default ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  proxy: true,
   url: 'https://api-v1.hicard.in:1337'
 });
