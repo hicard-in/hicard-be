@@ -51,6 +51,7 @@ ENV CF_ENDPOINT_ABS=${CF_ENDPOINT_ABS}
 WORKDIR /opt/
 # RUN npm install -g yarn
 COPY package.json ./
+COPY yarn.lock ./
 RUN yarn global add node-gyp
 # RUN rm -r node_modules
 RUN yarn config set network-timeout 600000 -g && yarn install
