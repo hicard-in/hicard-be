@@ -32,7 +32,14 @@ export default {
     strapi.db.lifecycles.subscribe({
       models: ['plugin::users-permissions.user'],
       async afterCreate(event) {
-        await pushToR3(event)
+        let username = event?.result?.username;
+        let id = event?.result?.id
+        await strapi.entityService.update("plugin::users-permissions.user", id, {
+          data: {
+            userId: username
+          },
+          populate: {},
+        })
         return true
       },
       async afterUpdate(event) {
@@ -45,8 +52,6 @@ export default {
 
 async function pushToR3(event) {
   let username = event?.result?.username
-
-  console.log("CHECKING USERNAME\n\n\n\n", username, "\n\n\n\n\n USERNAME")
 
   let data = await axios.get(`http://${process.env.HOST}:${process.env.PORT}/api/users/?filters[$or][0][username][$eq]=${username}&filters[$or][1][userId][$eq]=${username}&populate=deep`)
   data = data.data
@@ -68,8 +73,10 @@ async function pushToR3(event) {
   
   console.log(usernameInput, "CHECKING HEREE");
   const usernameCommand = new PutObjectCommand(usernameInput)
-  const userIdCommand = new PutObjectCommand(userIdInput)
-
   const usernameRes = await client.send(usernameCommand)
-  const userIdRes = await client.send(userIdCommand)
+
+  if(username != userId) {
+    const userIdCommand = new PutObjectCommand(userIdInput)
+    const userIdRes = await client.send(userIdCommand)
+  }
 }
