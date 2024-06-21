@@ -38,9 +38,14 @@ module.exports = ({ env }) => [
   'strapi::logger',
   'strapi::query',
   'strapi::body',
-  'strapi::session',
   'strapi::favicon',
   'strapi::public',
+  {
+    "name": "strapi::session",
+    config: {
+      secure: false
+    }
+  }
 ];
 
 // export default [
